@@ -5,14 +5,24 @@ Github: [https://github.com/ForkRepo/GitHub.Chrome](https://github.com/ForkRepo/
 Chrome APP Store：[https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
 
 
-## What
+## Has What ?
 
-1. **Trending link**
-	![3.png](screenshot/3.png)
-2. **github file icon**
-	![1.png](screenshot/1.png)
-3. **github avatar**
-	![2.png](screenshot/2.png)
+ - **Trending link**
+ 
+![3.png](screenshot/3.png)
+
+ - **github file icon**
+	
+![1.png](screenshot/1.png)
+
+ - **github avatar**
+
+![2.png](screenshot/2.png)
+
+
+## Other Modules
+
+Waiting for your suggestions.
 
 
 ## Thanks for 
