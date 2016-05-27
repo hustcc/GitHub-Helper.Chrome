@@ -1,6 +1,6 @@
-# GitHub.Chrome
+# GitHub-Helper.Chrome
 
-Github: [https://github.com/ForkRepo/GitHub.Chrome](https://github.com/ForkRepo/GitHub.Chrome)
+Github: [https://github.com/aTool-org/GitHub-Helper.Chrome](https://github.com/aTool-org/GitHub-Helper.Chrome)
 
 Chrome APP Store：[https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
 
@@ -27,5 +27,5 @@ Waiting for your suggestions.
 
 ## Thanks for 
 
- - [https://github.com/ForkRepo/GitHub.Chrome](https://github.com/ForkRepo/GitHub.Chrome)
+ - [https://github.com/chadluo/github-file-icon](https://github.com/chadluo/github-file-icon)
  - Github avatar（a chrome plugin）
