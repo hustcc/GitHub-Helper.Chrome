@@ -3,7 +3,7 @@
   "name": "GitHub Helper",
   "author": "GitHub",
   "description": "Get a better idea about github",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "permissions": [
     "tabs"
   ],
