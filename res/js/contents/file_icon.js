@@ -34,7 +34,7 @@ var file_icon_dict = {
   '.jpg': '<i class="devicons devicons-nancy"></i>',
   '.gif': '<i class="devicons devicons-nancy"></i>',
   '.bpm': '<i class="devicons devicons-nancy"></i>',
-
+  '.crx': '<i class="devicons devicons-chrome"></i>',
   '.svg': '<i class="devicons devicons-snap_svg"></i>',
 
   '.jshintrc': '<i class="devicons devicons-nodejs_small"></i>',
