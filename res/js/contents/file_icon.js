@@ -63,7 +63,7 @@ function file2iconHtml(fn) {
   var file_ext = getExt(fn).toLowerCase();
   // 优先判断文件名
   if (fn === 'license') {
-    return '<i class="devicons devicons-mitlicence"></i>';
+    return '<i class="devicons devicons-opensource"></i>';
   }
   if (fn === 'package.json') {
     return '<i class="devicons devicons-npm"></i>';
