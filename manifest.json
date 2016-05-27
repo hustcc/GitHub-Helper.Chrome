@@ -15,7 +15,7 @@
   },
   "content_scripts": [{
     "matches": ["https://github.com/*", "http://github.com/*"],
-    "css": ["res/css/style.css"],
+    "css": ["res/css/style.css", "res/devicons/css/devicons.css"],
     "js": ["res/js/contents/file_icon.js"],
     "run_at": "document_end"
   }, {

@@ -2,16 +2,9 @@ table.files td.icon {
   font-size: 18px;
 }
 
-@font-face {
-  font-family: devicons;
-  src: url(chrome-extension://__MSG_@@extension_id__/res/devicons/fonts/devicons.eot?xqxft6);
-  src: url(chrome-extension://__MSG_@@extension_id__/res/devicons/fonts/devicons.eot?#iefixxqxft6) format("embedded-opentype"), url(chrome-extension://__MSG_@@extension_id__/res/devicons/fonts/devicons.woff?xqxft6) format("woff"), url(chrome-extension://__MSG_@@extension_id__/res/devicons/fonts/devicons.ttf?xqxft6) format("truetype"), url(chrome-extension://__MSG_@@extension_id__/res/devicons/fonts/devicons.svg?xqxft6#devicons) format("svg");
-  font-weight: 400;
-  font-style: normal
-}
-
 .devicons {
   font-family: devicons;
+  margin-left: -3px;
   speak: none;
   font-style: normal;
   font-weight: 400;
@@ -21,16 +14,3 @@ table.files td.icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
-
-.devicons-css3_full:before { content: "\e64a" }
-.devicons-database:before { content: "\e606" }
-.devicons-git:before { content: "\e602" }
-.devicons-haskell:before { content: "\e677" }
-.devicons-html5:before { content: "\e636" }
-.devicons-javascript_badge:before { content: "\e681" }
-.devicons-less:before { content: "\e658" }
-.devicons-markdown:before { content: "\e63e" }
-.devicons-php:before { content: "\e63d" }
-.devicons-python:before { content: "\e63c" }
-.devicons-ruby_rough:before { content: "\e691" }
-.devicons-sass:before { content: "\e64b" }

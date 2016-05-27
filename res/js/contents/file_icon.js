@@ -1,40 +1,69 @@
+var file_icon_dict = {
+  '.html': '<i class="devicons devicons-html5"></i>',
+  '.css': '<i class="devicons devicons-css3_full"></i>',
+  '.sass': '<i class="devicons devicons-sass"></i>',
+  '.less': '<i class="devicons devicons-less"></i>',
+  '.js': '<i class="devicons devicons-javascript"></i>',
+  '.java': '<i class="devicons devicons-java"></i>',
+  '.py': '<i class="devicons devicons-python"></i>',
+  '.php': '<i class="devicons devicons-php"></i>',
+  '.git': '<i class="devicons devicons-git"></i>',
+  '.gitignore': '<i class="devicons devicons-git"></i>',
+  '.md': '<i class="devicons devicons-markdown"></i>',
+  '.rb': '<i class="devicons devicons-ruby_rough"></i>',
+  '.sh': '<i class="devicons devicons-terminal"></i>',
+  '.yml': '<i class="devicons devicons-database"></i>',
+  '.json': '<i class="devicons devicons-database"></i>',
+  '.xml': '<i class="devicons devicons-database"></i>',
+  '.xml': '<i class="devicons devicons-database"></i>',
+  '.plist': '<i class="devicons devicons-apple"></i>',
+  '.swift': '<i class="devicons devicons-swift"></i>',
+  '.png': '<i class="devicons devicons-photoshop"></i>',
+  '.jpg': '<i class="devicons devicons-photoshop"></i>',
+  '.gif': '<i class="devicons devicons-photoshop"></i>',
+  '.bpm': '<i class="devicons devicons-photoshop"></i>',
+
+  '.svg': '<i class="devicons devicons-snap_svg"></i>',
+
+  '.jshintrc': '<i class="devicons devicons-nodejs_small"></i>',
+}
+
+function getExt(f) {
+  var index = f.lastIndexOf('.');
+  if (index === -1) {
+    return ''
+  }
+  return f.substr(index); 
+}
+
+function file2iconHtml(fn) {
+  var file_ext = getExt(fn).toLowerCase();
+  // 优先判断文件名
+  if (fn === 'license') {
+    return '<i class="devicons devicons-mitlicence"></i>';
+  }
+  if (fn === 'package.json') {
+    return '<i class="devicons devicons-npm"></i>';
+  }
+  // 判断扩展名
+  if (file_icon_dict[file_ext]) {
+    return file_icon_dict[file_ext];
+  }
+}
+
 var f = document.querySelectorAll('tr.js-navigation-item');
 
-f.forEach(function (tr) {
-  var icon = tr.children[0];
-  var fn = tr.children[1].children[0].textContent;
+[].slice.call(f).forEach(function (tr) {
+  var icon = tr.querySelector('.icon');
+  var content = tr.querySelector('.content a');
+  if (!content) {
+    return;
+  }
+  var fn = content.innerText.trim().toLowerCase();;
+  file_ext = getExt(fn).toLowerCase();
 
-  if (fn.toLowerCase() === 'license') {
-    icon.innerHTML = '<i class="fa fa-certificate"></i>';
-  } else if (fn.startsWith('.git')) {
-    icon.innerHTML = '<i class="devicons devicons-git"></i>';
-  } else if (fn.endsWith('.js')) {
-    icon.innerHTML = '<i class="devicons devicons-javascript_badge"></i>';
-  } else if (fn.endsWith('.css')) {
-    icon.innerHTML = '<i class="devicons devicons-css3_full"></i>';
-  } else if (fn.endsWith('.scss')) {
-    icon.innerHTML = '<i class="devicons devicons-sass"></i>';
-  } else if (fn.endsWith('.less')) {
-    icon.innerHTML = '<i class="devicons devicons-less"></i>';
-  } else if (fn.endsWith('.html')) {
-    icon.innerHTML = '<i class="devicons devicons-html5"></i>';
-  } else if (fn.endsWith('.md')) {
-    icon.innerHTML = '<i class="devicons devicons-markdown"></i>';
-  } else if (fn.endsWith('.hs')) {
-    icon.innerHTML = '<i class="devicons devicons-haskell"></i>';
-  } else if (fn.endsWith('.py')) {
-    icon.innerHTML = '<i class="devicons devicons-python"></i>';
-  } else if (fn.endsWith('.php')) {
-    icon.innerHTML = '<i class="devicons devicons-php"></i>';
-  } else if (fn.endsWith('.rb')) {
-    icon.innerHTML = '<i class="devicons devicons-ruby_rough"></i>';
-  } else if (fn.endsWith('.sh')) {
-    icon.innerHTML = '<i class="icon-script-alt"></i>';
-  } else if (fn.endsWith('.yml') || fn.endsWith('.yaml') || fn.endsWith('.json')) {
-    icon.innerHTML = '<i class="devicons devicons-database"></i>';
-  } else if (fn.endsWith('.swift')) {
-    icon.innerHTML = '<i class="devicons devicons-swift"></i>';
-  } else if (fn.endsWith('.plist')) {
-    icon.innerHTML = '<i class="devicons devicons-apple"></i>';
+  var iconHtml = file2iconHtml(fn);
+  if (iconHtml) {
+    icon.innerHTML = iconHtml;
   }
 });
