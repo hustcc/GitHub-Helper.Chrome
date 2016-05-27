@@ -1,0 +1,34 @@
+{
+  "name": "devicons",
+  "description": "An iconic font made for developers",
+  "version": "1.8.0",
+  "keywords": [
+    "font",
+    "icons",
+    "devicons",
+    "glyphs"
+  ],
+  "homepage": "http://vorillaz.github.io/devicons/",
+  "bugs": {
+    "url": "http://github.com/vorillaz/devicons/issues"
+  },
+  "author": {
+    "name": "Theodore Vorillas",
+    "email": "sayhi@vorillaz.com",
+    "web": "http://twitter.com/vorillas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vorillaz/devicons.git"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/mit-license.html"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "_from": "devicons@1.8.0",
+  "_resolved": "http://registry.npm.taobao.org/devicons/download/devicons-1.8.0.tgz"
+}

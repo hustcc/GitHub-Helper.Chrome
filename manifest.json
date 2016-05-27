@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Helper",
+  "author": "GitHub",
+  "description": "Get a better idea about github",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs"
+  ],
+  "page_action": {
+    "default_icon": {
+      "19": "res/icon/icon.png",
+      "38": "res/icon/icon.png"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "css": ["res/css/style.css"],
+    "js": ["res/js/contents/file_icon.js"],
+    "run_at": "document_end"
+  }, {
+    "matches": ["https://github.com/*"],
+    "js": ["res/js/common_content.js", "res/js/contents/trending.js"],
+    "run_at": "document_end"
+  }],
+  "icons": {
+    "128": "res/icon/icon.png",
+    "64": "res/icon/icon.png",
+    "32": "res/icon/icon.png",
+    "16": "res/icon/icon.png"
+  },
+  "background": {
+    "scripts": ["res/js/background.js"] 
+  },
+  "web_accessible_resources": ["res/devicons/fonts/*.*"]
+}
