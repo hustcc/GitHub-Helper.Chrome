@@ -21,6 +21,7 @@ var file_icon_dict = {
   '.cpp': '<i class="devicons devicons-visualstudio"></i>',
   '.asp': '<i class="devicons devicons-netmagazine"></i>',
   '.cs': '<i class="devicons devicons-visualstudio"></i>',
+  '.coffee': '<i class="devicons devicons-coffeescript"></i>',
 
   '.yml': '<i class="devicons devicons-database"></i>',
   '.json': '<i class="devicons devicons-database"></i>',
