@@ -3,7 +3,7 @@
   "name": "GitHub Helper",
   "author": "GitHub",
   "description": "Get a better idea about github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": [
     "tabs"
   ],
@@ -14,13 +14,18 @@
     }
   },
   "content_scripts": [{
-    "matches": ["https://github.com/*"],
+    "matches": ["https://github.com/*", "http://github.com/*"],
     "css": ["res/css/style.css"],
     "js": ["res/js/contents/file_icon.js"],
     "run_at": "document_end"
   }, {
-    "matches": ["https://github.com/*"],
+    "matches": ["https://github.com/*", "http://github.com/*"],
     "js": ["res/js/common_content.js", "res/js/contents/trending.js"],
+    "run_at": "document_end"
+  }, {
+    "matches": ["https://github.com/*", "http://github.com/*"],
+    "css": [ "res/css/contents/avatar.css" ],
+    "js": ["res/js/lib/jquery.min.js", "res/js/contents/avatar.js"],
     "run_at": "document_end"
   }],
   "icons": {
