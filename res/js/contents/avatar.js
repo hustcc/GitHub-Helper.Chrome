@@ -100,9 +100,6 @@ getAvatarsForUsers( function( data ) {
 // jQuery object, we'll do a workaround here
 var buttonSelector = '.js-events-pagination, .ajax-pagination-btn';
 $news.on('click', buttonSelector, function() {
-    
-    console.info('waiting for a pagination to complete');
-
     var id = setInterval(function() {
         var $button = $( buttonSelector );
         if( $button.closest( '.loading' ).length === 0 ) {
