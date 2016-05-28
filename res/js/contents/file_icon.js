@@ -23,15 +23,15 @@ var file_icon_dict = {
   '.cs': '<i class="devicons devicons-visualstudio"></i>',
   '.coffee': '<i class="devicons devicons-coffeescript"></i>',
   '.scala': '<i class="devicons devicons-scala"></i>',
+  '.swift': '<i class="devicons devicons-swift"></i>',
   
   '.yml': '<i class="devicons devicons-database"></i>',
   '.json': '<i class="devicons devicons-database"></i>',
   '.xml': '<i class="devicons devicons-database"></i>',
-  '.xml': '<i class="devicons devicons-database"></i>',
+  '.conf': '<i class="devicons devicons-database"></i>',
   '.map': '<i class="devicons devicons-database"></i>',
-
   '.plist': '<i class="devicons devicons-apple"></i>',
-  '.swift': '<i class="devicons devicons-swift"></i>',
+
   '.png': '<i class="devicons devicons-nancy"></i>',
   '.jpg': '<i class="devicons devicons-nancy"></i>',
   '.gif': '<i class="devicons devicons-nancy"></i>',
