@@ -22,11 +22,13 @@ var file_icon_dict = {
   '.asp': '<i class="devicons devicons-netmagazine"></i>',
   '.cs': '<i class="devicons devicons-visualstudio"></i>',
   '.coffee': '<i class="devicons devicons-coffeescript"></i>',
-
+  '.scala': '<i class="devicons devicons-scala"></i>',
+  
   '.yml': '<i class="devicons devicons-database"></i>',
   '.json': '<i class="devicons devicons-database"></i>',
   '.xml': '<i class="devicons devicons-database"></i>',
   '.xml': '<i class="devicons devicons-database"></i>',
+  '.map': '<i class="devicons devicons-database"></i>',
 
   '.plist': '<i class="devicons devicons-apple"></i>',
   '.swift': '<i class="devicons devicons-swift"></i>',
@@ -34,6 +36,7 @@ var file_icon_dict = {
   '.jpg': '<i class="devicons devicons-nancy"></i>',
   '.gif': '<i class="devicons devicons-nancy"></i>',
   '.bpm': '<i class="devicons devicons-nancy"></i>',
+  '.ico': '<i class="devicons devicons-nancy"></i>',
   '.crx': '<i class="devicons devicons-chrome"></i>',
   '.svg': '<i class="devicons devicons-snap_svg"></i>',
 
@@ -43,6 +46,7 @@ var file_icon_dict = {
   '.viminfo': '<i class="devicons devicons-vim"></i>',
   '.sublime-settings': '<i class="devicons devicons-sublime"></i>',
   '.sublime': '<i class="devicons devicons-sublime"></i>',
+  '.eslintrc': '<i class="devicons devicons-nodejs_small"></i>',
   
   // font devicons devicons-symfony
   '.eot': '<i class="devicons devicons-symfony"></i>',
@@ -79,6 +83,9 @@ function file2iconHtml(fn) {
   }
   if (fn === 'manifest.json') {
     return '<i class="devicons devicons-chrome"></i>';
+  }
+  if (fn === 'androidmanfest.xml.') {
+    return '<i class="devicons devicons-android"></i>';
   }
   // 判断扩展名
   if (file_icon_dict[file_ext]) {
