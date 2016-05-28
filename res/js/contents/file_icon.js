@@ -140,11 +140,22 @@ function doFileIcon() {
       icon.innerHTML = iconHtml;
     }
   });
-  frame_func(doFileIcon);
+
+  console.log('frame');
+  if ('off' != status_local) {
+    frame_func(doFileIcon);
+  }
 }
 
 var frame_func = function(func) {
-  window.setTimeout(func, 1000 / 10);
+  window.setTimeout(func, 1000 / 125);
 };
 
-doFileIcon();
+var status_local = null;
+
+chrome.runtime.sendMessage({"get": "status", "from": "file_icon"}, function(response) {
+  status_local = response;
+  if ('off' != status_local) {
+    doFileIcon();
+  }
+});

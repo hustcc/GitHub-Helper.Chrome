@@ -3,11 +3,11 @@
   "name": "GitHub Helper",
   "author": "GitHub",
   "description": "Get a better idea about github",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "permissions": [
-    "tabs"
+    "tabs", "storage"
   ],
-  "page_action": {
+  "browser_action": {
     "default_icon": {
       "19": "res/icon/icon.png",
       "38": "res/icon/icon.png"
