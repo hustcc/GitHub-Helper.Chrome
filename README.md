@@ -7,6 +7,10 @@ Chrome APP Store：[https://chrome.google.com/webstore/detail/GitHub Helper/bnpg
 
 ## Has What ?
 
+ - **Switch on/off Anytime**
+
+![4.png](screenshot/4.png)
+
  - **Trending link**
  
 ![3.png](screenshot/3.png)
