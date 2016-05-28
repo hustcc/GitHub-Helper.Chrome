@@ -141,7 +141,6 @@ function doFileIcon() {
     }
   });
 
-  console.log('frame');
   if ('off' != status_local) {
     frame_func(doFileIcon);
   }
