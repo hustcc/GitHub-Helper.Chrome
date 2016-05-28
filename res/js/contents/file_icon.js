@@ -148,7 +148,7 @@ function doFileIcon() {
 }
 
 var frame_func = function(func) {
-  window.setTimeout(func, 1000 / 125);
+  window.setTimeout(func, 1000 / 8);
 };
 
 var status_local = null;
