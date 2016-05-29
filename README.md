@@ -2,7 +2,8 @@
 
 ![screenshot/logo.png](screenshot/logo.png)
 
-Chrome APP Store：[https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
+
+Chrome Extentions Market: [https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
 
 
 ## Has What ?
