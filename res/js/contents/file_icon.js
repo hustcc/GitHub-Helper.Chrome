@@ -113,33 +113,38 @@ function file2iconHtml(fn) {
 }
 
 var icon = null;
-var iconHtm = null;
+var iconHtml = null;
 var content = null;
 var fn = null;
 
+var fileTable = null;
+var fileTrs = null;
+
 function doFileIcon() {
-  var f = document.querySelectorAll('tr.js-navigation-item');
+  fileTable = document.querySelector('table.files.js-navigation-container');
+  // 有文件列表，并且没有被处理过
+  if (fileTable && ('1' !== fileTable.getAttribute('github-helper-chrome'))) {
 
-  [].slice.call(f).forEach(function (tr) {
-    icon = tr.querySelector('.icon');
-    if (! icon) {
-      return;
-    }
-    if (icon.getAttribute('github-chrome') == '1') {
-      return;
-    }
-    icon.setAttribute('github-chrome', '1');
-
-    content = tr.querySelector('.content a');
-    if (!content) {
-      return;
-    }
-    fn = content.innerText.trim();
-    iconHtml = file2iconHtml(fn);
-    if (iconHtml) {
-      icon.innerHTML = iconHtml;
-    }
-  });
+    fileTrs = fileTable.querySelectorAll('tr.js-navigation-item');
+    // 设置已处理
+    fileTable.setAttribute('github-helper-chrome', '1');
+    // 开始处理
+    [].slice.call(fileTrs).forEach(function (tr) {
+      icon = tr.querySelector('.icon');
+      if (! icon) {
+        return;
+      }
+      content = tr.querySelector('.content a');
+      if (!content) {
+        return;
+      }
+      fn = content.innerText.trim();
+      iconHtml = file2iconHtml(fn);
+      if (iconHtml) {
+        icon.innerHTML = iconHtml;
+      }
+    });
+  }
 
   if ('off' != status_local) {
     frame_func(doFileIcon);
