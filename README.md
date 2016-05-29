@@ -3,7 +3,10 @@
 ![screenshot/logo.png](screenshot/logo.png)
 
 
-Chrome Extentions Market: [https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
+## Install It
+
+1. Chrome Extentions Market: [https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm](https://chrome.google.com/webstore/detail/GitHub Helper/bnpgnjajoaimdcjjmfjegpjmbmbplobm)
+2. [**Download the GitHub-Helper.crx**](GitHub-Helper.crx), and drag to the Chrome Extentions page with `develop mode opened`.
 
 
 ## Has What ?
