@@ -15,6 +15,10 @@
 
 ![4.png](screenshot/4.png)
 
+ - **Configuration Page**
+
+![6.png](screenshot/6.png)
+
  - **Trending link**
  
 ![3.png](screenshot/3.png)

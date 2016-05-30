@@ -14,10 +14,8 @@ function saveConfiguration() {
 		}
 	});
 	chrome.storage.local.set(configuration, function() {
-		$_('tip_label').innerHTML = ' Saved.';
-
 		chrome.runtime.sendMessage({"set": "status", "data": configuration}, function(response) {
-	  		console.log(response);
+	  		$_('tip_label').innerHTML = ' Saved.';
 		});
 		setTimeout(function() {
 			$_('tip_label').innerHTML = '';
@@ -44,6 +42,8 @@ function loadConfiguration() {
 			[].slice.call(['trending_link', 'github_avatar', 'github_fileicon', 'github_filediff']).forEach(function (e) {
 				$_(e).disabled = true;
 			});
+			$_('save_button').disabled = true;
+			
 			$_('tip_label').innerHTML = ' Plugin is OFF.'
 		}
 		else {
