@@ -1,0 +1,74 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+
+
+
+.file-type {
+	opacity: 0.5;
+}
+.file-type.selected{
+	opacity: 1 !important;
+}
+.file-type .octicon-eye-watch {
+	display: none !important;
+}
+
+.file-type.selected .octicon-x{
+	display: none !important;
+}
+.file-type.selected .octicon-eye-watch{
+	display: table-cell !important;
+}
+#filter-menu .octicon{
+	margin-left: 0;
+	margin-top: 0;
+	float: none;
+	position: absolute;
+  left: 5px;
+}
+#filter-menu .select-menu-footer{
+  height: 40px;
+      line-height: 17px;
+      text-indent: 35px;
+      padding-top: 10px;
+}
+
+.diffbar #filter-menu .select-menu-button{
+  background: none ;
+  border: none;
+  color: #767676;
+  box-shadow: none;
+}
+.diffbar #filter-menu .select-menu-button:hover{
+  color:#4078c0;
+}
+
+.toggle-state-btn .octicon-triangle-down{
+	display: none;
+}
+
+#filter-menu .select-menu-header .octicon{
+	float: right;
+	margin-top: 5px;
+}
+.diff-helper-hidden{
+	opacity: 0.4;
+}
+.diff-helper-hidden .data{
+	height: 0;
+}
+
+.diff-helper-hidden .toggle-state-btn .octicon-triangle-down {
+	display: inline-block;
+}
+.diff-helper-hidden .toggle-state-btn .octicon-triangle-up {
+	display: none;
+}
+
+.show_hide_btn_cont::before{
+	content: "Hide diff"
+}
+.diff-helper-hidden .show_hide_btn_cont::before{
+	content: "Show diff"
+}
