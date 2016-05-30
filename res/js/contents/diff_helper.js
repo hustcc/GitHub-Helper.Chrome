@@ -138,7 +138,7 @@ ls_get = function(key){
 };
 
 chrome.runtime.sendMessage({"get": "status", "from": "file_icon"}, function(response) {
-  if ('off' != response) {
+  if ('off' !== response['status'] && 'off' !== response['github_filediff']) {
     start_inject_diff();
   }
 });

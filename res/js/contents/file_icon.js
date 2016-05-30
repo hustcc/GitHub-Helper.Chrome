@@ -75,7 +75,7 @@ function file2iconHtml(fn) {
   var file_ext = getExt(fn).toLowerCase(); 
   // 优先判断文件名（小写）
   fn = fn.toLowerCase();
-  if (fn === 'license') {
+  if (fn === 'license' || fn === 'license.txt') {
     return '<i class="devicons devicons-opensource"></i>';
   }
   if (fn.startsWith('.npm') || (fn === 'package.json')) {
@@ -159,7 +159,7 @@ var status_local = null;
 
 chrome.runtime.sendMessage({"get": "status", "from": "file_icon"}, function(response) {
   status_local = response;
-  if ('off' != status_local) {
+  if ('off' !== status_local['status'] && 'off' !== status_local['github_fileicon']) {
     doFileIcon();
   }
 });

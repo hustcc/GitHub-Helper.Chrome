@@ -115,7 +115,7 @@ function showAvatar() {
 }
 
 chrome.runtime.sendMessage({"get": "status", "from": "trending"}, function(response) {
-    if ('off' != response) {
+    if ('off' !== response['status'] && 'off' !== response['github_avatar']) {
         showAvatar();
     }
 });

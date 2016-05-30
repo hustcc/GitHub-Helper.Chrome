@@ -3,10 +3,16 @@
   "name": "GitHub Helper",
   "author": "GitHub",
   "description": "Get a better idea about github",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "permissions": [
     "tabs", "storage"
   ],
+  "icons": {
+    "128": "res/icon/icon.png",
+    "64": "res/icon/icon.png",
+    "32": "res/icon/icon.png",
+    "16": "res/icon/icon.png"
+  },
   "browser_action": {
     "default_icon": {
       "19": "res/icon/icon.png",
@@ -15,7 +21,7 @@
   },
   "content_scripts": [{
     "matches": ["https://github.com/*", "http://github.com/*"],
-    "css": ["res/css/style.css", "res/devicons/css/devicons.css"],
+    "css": ["res/css/contents/file_icon.css", "res/devicons/css/devicons.css"],
     "js": ["res/js/contents/file_icon.js"],
     "run_at": "document_end"
   }, {
@@ -33,14 +39,9 @@
     "js": ["res/js/lib/jquery.min.js", "res/js/contents/diff_helper.js"],
     "run_at": "document_end"
   }],
-  "icons": {
-    "128": "res/icon/icon.png",
-    "64": "res/icon/icon.png",
-    "32": "res/icon/icon.png",
-    "16": "res/icon/icon.png"
-  },
   "background": {
     "scripts": ["res/js/background.js"] 
   },
+  "options_page": "res/html/options.html",
   "web_accessible_resources": ["res/devicons/fonts/*.*"]
 }
