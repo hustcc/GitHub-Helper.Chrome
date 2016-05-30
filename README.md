@@ -27,6 +27,9 @@
 
 ![2.png](screenshot/2.png)
 
+ - **github diff helper**
+
+![5.png](screenshot/5.png)
 
 ## Other Modules
 
@@ -38,3 +41,4 @@ Waiting for your suggestions.
  - [https://github.com/chadluo/github-file-icon](https://github.com/chadluo/github-file-icon)
  - Github avatar（a chrome plugin）
  - [https://github.com/vorillaz/devicons/](https://github.com/vorillaz/devicons/)
+ - [Github diff helper](http://alexw.me/)（a chrome plugin）

@@ -1,9 +1,6 @@
 /**
  * Place your custom CSS styles here.
  **/
-
-
-
 .file-type {
 	opacity: 0.5;
 }
@@ -67,8 +64,8 @@
 }
 
 .show_hide_btn_cont::before{
-	content: "Hide diff"
+	content: "Hide diff "
 }
 .diff-helper-hidden .show_hide_btn_cont::before{
-	content: "Show diff"
+	content: "Show diff "
 }

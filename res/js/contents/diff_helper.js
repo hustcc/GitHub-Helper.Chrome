@@ -1,18 +1,15 @@
-
-$(document).ready(function(){
+function start_inject_diff() {
   var insertedNodes = [];
-    var observer = new WebKitMutationObserver(function(mutations) {
-      inject_diff_helpers();
-     mutations.forEach(function(mutation) {
-       for (var i = 0; i < mutation.addedNodes.length; i++)
-         insertedNodes.push(mutation.addedNodes[i]);
-     })
-    });
-    observer.observe($('#js-repo-pjax-container')[0], { childList: true });
-
-
+  var observer = new WebKitMutationObserver(function(mutations) {
     inject_diff_helpers();
-});
+    mutations.forEach(function(mutation) {
+      for (var i = 0; i < mutation.addedNodes.length; i++)
+        insertedNodes.push(mutation.addedNodes[i]);
+    })
+  });
+  observer.observe($('#js-repo-pjax-container')[0], { childList: true });
+  inject_diff_helpers();
+}
 
 inject_diff_helpers = function(){
   if ($('.toc-diff-stats').length || $('.toc-select').length) {
@@ -130,9 +127,7 @@ inject_diff_helpers = function(){
       }
 
     };
-
     hide_filtered_diffs();
-
   }}
 
 ls_set = function(key, data){
@@ -141,3 +136,9 @@ ls_set = function(key, data){
 ls_get = function(key){
     return JSON.parse(window.localStorage.getItem(key));
 };
+
+chrome.runtime.sendMessage({"get": "status", "from": "file_icon"}, function(response) {
+  if ('off' != response) {
+    start_inject_diff();
+  }
+});
