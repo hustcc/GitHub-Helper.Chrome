@@ -7,8 +7,11 @@ function start_inject_diff() {
         insertedNodes.push(mutation.addedNodes[i]);
     })
   });
-  observer.observe($('#js-repo-pjax-container')[0], { childList: true });
-  inject_diff_helpers();
+  var nodes = document.querySelectorAll('#js-repo-pjax-container');
+  if (nodes && nodes.length >= 1) {
+    observer.observe(document.querySelectorAll('#js-repo-pjax-container')[0], { childList: true });
+    inject_diff_helpers();
+  }
 }
 
 inject_diff_helpers = function(){
@@ -34,7 +37,7 @@ inject_diff_helpers = function(){
         //file diffs, don't have ID's, but they do have links with the same name before them
         $('[name=' + $(this).attr('href').substr(1) + ']').next().attr('data-extension', ext_str);
       }
-      console.log("exts",extensions);
+      // console.log("exts",extensions);
     });
 
 

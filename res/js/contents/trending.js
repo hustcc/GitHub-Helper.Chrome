@@ -2,7 +2,7 @@
 
 
 function addTrendingLink() {
-	var menu_nav = document.querySelector('ul.header-nav.left');
+	var menu_nav = document.querySelector('ul.header-nav.float-left');
 	/*
 	<li class="header-nav-item">
 	    <a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">Pull requests</a>        
