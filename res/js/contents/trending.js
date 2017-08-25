@@ -9,7 +9,7 @@ function addTrendingLink() {
 	</li>
 	*/
 	if (menu_nav) {
-		var trending = tag('li', 'header-nav-item', '<a href="/trending" class="js-selected-navigation-item header-navlink">Trending</a>');
+		var trending = tag('li', 'header-nav-item', '<a href="/trending" class="js-selected-navigation-item HeaderNavlink px-2">Trending</a>');
 		menu_nav.appendChild(trending);
 	}
 }
